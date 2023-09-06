@@ -1,0 +1,31 @@
+@use '../abstracts/mixins' as abstract;
+.shopping_cards{
+    margin-top: 65px;
+    .card__row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 55px;
+        @include abstract.media(983px){ 
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @include abstract.media(590px){ 
+            grid-template-columns: 1fr;
+          }
+        .shop-btns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                padding: 10px 20px;
+                background: rgb(54, 231, 54);
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .quantity-value{
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+            }
+        }
+    }
+}

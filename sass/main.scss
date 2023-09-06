@@ -1,0 +1,20 @@
+//components
+@import
+ "components/form",
+ "components/product-cards", 
+ "components/laoding";
+
+//layout
+@import 
+"layout/header",
+ "layout/footer";
+
+//base
+@import
+ "base/reset";
+
+//pages
+@import 
+"pages/home",
+"pages/shop-cart",
+"pages/single-product";

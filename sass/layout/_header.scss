@@ -1,0 +1,45 @@
+@use "../abstracts/placeholders";
+@use '../abstracts/mixins' as media;
+.header {
+   @extend %header-bg;
+  & .container {
+    @extend %df-main;
+  }
+  &__logo {
+    a {
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .nav {
+    @extend %df-main;
+    gap: 25px;
+    &__list {
+      @extend %df-main;
+      gap: 15px;
+      @include media.media(590px){
+        display: none;
+      }
+    }
+    &__item {
+      a {
+        color: #fff;
+      }
+    }
+    &__actions{
+        position: relative;
+        .cart{
+            position: absolute;
+            @extend %cart-bg;
+            padding: 5px;
+            color: rgb(241, 233, 233);
+            font-weight: bold;
+            right: -5px;
+            top: -3px;
+            
+        }
+        @extend %cart-bg;
+    }
+  }
+}

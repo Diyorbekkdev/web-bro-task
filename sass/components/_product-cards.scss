@@ -1,0 +1,106 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  background-clip: border-box;
+  color: #4a5568;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  max-width: 350px; 
+  height: 400px;
+
+  &__header {
+    position: relative;
+    margin-left: 1rem; 
+    margin-right: 1rem; 
+    margin-top: -1.5rem; 
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: #4299e1;
+    background-clip: border-box;
+    color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(66, 153, 225, 0.4);
+    background-image: linear-gradient(to right, #4299e1, #3182ce);
+    // background: url('../../assets/img/cart.png') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  &__content {
+    padding: 1.5rem; 
+  
+    .card__title {
+      display: block;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.6;
+      color: #2d3748;
+    }
+  
+    .card__text {
+      display: block;
+      font-family: sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5;
+      color: inherit;
+    }
+  }
+  &__detail__info{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__actions {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    .card__button {
+      display: block;
+      user-select: none;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #4299e1;
+      padding: 0.75rem 1.5rem;
+      text-align: center;
+      vertical-align: middle;
+      font-family: sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffffff;
+      box-shadow: 0 4px 6px -1px rgba(66, 153, 225, 0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+  
+      &:hover {
+        box-shadow: 0 6px 8px -2px rgba(66, 153, 225, 0.4);
+        background-color: #3182ce;
+      }
+  
+      &:focus {
+        opacity: 0.85;
+        box-shadow: none;
+      }
+  
+      &:active {
+        opacity: 0.85;
+        box-shadow: none;
+      }
+  
+      &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+
+
